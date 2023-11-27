@@ -1,0 +1,37 @@
+:root {
+  font-family: "meslolgs_nfregular";
+  background-color: #242424;
+  color: #F0F0F0;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#main-view {
+  background-color: #2e2e2e;
+  border: solid 3px #e0af68;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5rem;
+  height: 75vh;
+}
+
+#conversation-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+
+.greeting-placeholder {
+  justify-self: center;
+}
+
+/*# sourceMappingURL=index.css.map */

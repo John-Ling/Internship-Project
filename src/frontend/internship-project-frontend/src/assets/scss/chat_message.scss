@@ -1,0 +1,20 @@
+@use "./colours.scss" as *;
+
+div {
+	padding: 1rem;
+	background-color: $background;
+}
+
+.message {
+	width: 50%;
+	margin: 0.5rem;
+}
+
+.bot-message {
+	border: solid 3px $yellow;
+	
+}
+
+.user-message {
+	border: solid 3px $blue;
+}

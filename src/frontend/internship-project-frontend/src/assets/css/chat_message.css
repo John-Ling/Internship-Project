@@ -1,0 +1,19 @@
+div {
+  padding: 1rem;
+  background-color: #242424;
+}
+
+.message {
+  width: 50%;
+  margin: 0.5rem;
+}
+
+.bot-message {
+  border: solid 3px #e0af68;
+}
+
+.user-message {
+  border: solid 3px #7aa2f7;
+}
+
+/*# sourceMappingURL=chat_message.css.map */

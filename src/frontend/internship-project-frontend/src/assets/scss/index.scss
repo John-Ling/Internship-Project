@@ -1,0 +1,38 @@
+@use "./colours.scss" as *;
+
+:root {
+	font-family: 'meslolgs_nfregular';
+	background-color: $background;
+	color: $text;
+}
+
+body {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	gap: 0;
+	align-items: center;
+	min-height: 100vh;
+}
+
+#main-view {
+	background-color: $background-darker;
+	border: solid 3px $yellow;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0.5rem;
+	height: 75vh;
+}
+
+
+
+#conversation-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 75vh;
+}
+.greeting-placeholder {
+	justify-self: center;
+}
