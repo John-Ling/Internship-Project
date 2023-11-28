@@ -1,0 +1,97 @@
+Title: AMMB HLDGS BHD
+ID: 1015
+Category: Financials (Banking Services)
+INCOME STATEMENT 
+Annual Standardised in Millions of Malaysian Ringgit 
+31-Mar-2023 31-Mar-2022 31-Mar-2021 31-Mar-2020 31-Mar-2019 
+Interest Income, Bank 4,980.81 4,095.01 4,206.08 4,940.01 4,892.07 
+Interest & Fees on Loans 3,760.93 3,161.75 3,265.64 3,788.35 3,783.70 
+Interest & Dividends on Investment Secs. 854.97 636.76 599.88 635.34 475.11 
+FedFundsSold/ScrtyPurch UnderResaleAgrmt - - - - - 
+Interest on Deposits 180.12 76.74 65.55 68.76 108.59 
+Other Interest Income 34.19 18.50 17.30 24.67 43.43 
+Trading Account Interest 150.60 201.26 257.71 422.90 481.24 
+Total Interest Expense 2,701.66 1,778.06 2,076.06 3,011.54 3,167.77 
+Interest on Deposit 2,022.34 1,378.20 1,697.12 2,444.53 2,589.03 
+Interest on Other Borrowings 418.58 377.34 336.28 404.36 535.70 
+FedFundsPurch/ScrtySoldUnderRepurchAgrmt 260.75 22.52 42.67 162.65 43.04 
+Net Interest Income 2,279.14 2,316.96 2,130.02 1,928.48 1,724.31 
+Loan Loss Provision 421.27 313.99 1,112.47 321.76 -303.61 
+Net Interest Inc. After Loan Loss Prov. 1,857.87 2,002.96 1,017.55 1,606.72 2,027.92 
+Non-Interest Income, Bank 2,426.28 3,269.66 3,514.94 3,337.35 3,200.34 
+Fees & Commissions from Operations 133.51 99.41 90.74 114.06 115.94 
+Comm./Fees from Securities Activities 408.51 459.86 448.17 384.71 358.21 
+Credit Card Fees - - - - - 
+Insurance Commissions, Fees & Premiums - 1,334.85 1,398.56 1,428.73 1,374.78 
+Fees for Other Customer Services 54.97 44.46 42.83 45.06 42.35 
+Real Estate Operation Gain 0.03 1.10 3.30 5.05 27.38 
+Dealer Trading Account Profit 0.00 0.40 66.48 - - 
+Investment Securities Gains 72.77 48.44 339.12 170.47 94.00 
+Foreign Currency Gains 263.99 84.98 110.98 103.65 162.76 
+Unrealized Gains - - - 36.62 40.34 
+Other Unusual Income 9.05 0.08 11.08 1.64 2.76 
+Other Revenue 1,483.46 1,196.09 1,003.66 1,083.99 1,022.16 
+Non-Interest Expense, Bank -2,028.71 -3,467.87 -8,015.98 -3,161.21 -3,132.89 
+Labor & Related Expenses -1,317.68 -1,310.55 -1,280.17 -1,241.03 -1,260.50 
+Depreciation Expense -124.84 -140.79 -152.23 -144.08 -50.71 
+Amortization of Intangibles -78.69 -107.20 -110.70 -108.91 -118.39 
+Amortization of Acquisition Costs - - - - - 
+Dealer Trading Account Loss -1.46 -41.05 - -19.59 -34.07 
+Investment Securities Losses - - - - - 
+Unrealized Losses - - - - - 
+Foreign Currency Losses - - - - - 
+Litigation Expense - - - - - 
+Other Unusual Expense -14.36 -303.27 -4,817.27 -46.53 -11.84 
+Other Expense -491.70 -1,565.03 -1,655.61 -1,601.09 -1,657.38 
+Net Income Before Taxes 2,255.44 1,804.75 -3,483.50 1,782.86 2,095.37 
+Provision for Income Taxes 513.06 209.81 228.60 330.02 492.31 
+Net Income After Taxes 1,742.38 1,594.94 -3,712.09 1,452.83 1,603.07 
+Minority Interest -0.21 -92.26 -114.37 -112.12 -97.78 
+Equity In Affiliates - - - - - 
+U.S. GAAP Adjustment - - - - - 
+Net Income Before Extra. Items 1,742.17 1,502.68 -3,826.47 1,340.72 1,505.29 
+Accounting Change - - - - - 
+Discontinued Operations -7.02 - - - - 
+Extraordinary Item - - - - - 
+Tax on Extraordinary Items - - - - - 
+Total Extraordinary Items -7.02 - - - - 
+Net Income 1,735.15 1,502.68 -3,826.47 1,340.72 1,505.29 
+Preferred Dividends - - - - - 
+General Partners' Distributions - - - - - 
+Miscellaneous Earnings Adjustment - - - - - 
+Pro Forma Adjustment - - - - - 
+Interest Adjustment - Primary EPS - - - - - 
+Total Adjustments to Net Income - - - - - 
+Income Available to Com Excl ExtraOrd 1,742.17 1,502.68 -3,826.47 1,340.72 1,505.29 
+Income Available to Com Incl ExtraOrd 1,735.15 1,502.68 -3,826.47 1,340.72 1,505.29 
+Basic Weighted Average Shares 3,310.65 3,299.72 3,007.72 3,003.68 3,008.91 
+Basic EPS Excluding Extraordinary Items 0.53 0.46 -1.27 0.45 0.50 
+Basic EPS Including Extraordinary Items 0.52 0.46 -1.27 0.45 0.50 
+Dilution Adjustment - - - - - 
+Diluted Net Income 1,735.15 1,502.68 -3,826.47 1,340.72 1,505.29 
+Diluted Weighted Average Shares 3,310.65 3,299.72 3,007.72 3,003.68 3,008.91 
+Diluted EPS Excluding ExtraOrd Items 0.53 0.46 -1.27 0.45 0.50 
+Diluted EPS Including ExtraOrd Items 0.52 0.46 -1.27 0.45 0.50 
+DPS - Common Stock Primary Issue 0.18 0.05 - 0.13 0.20 
+Dividends per Share - Com Stock Issue 2 - - - - - 
+Dividends per Share - Com Stock Issue 3 - - - - - 
+Dividends per Share - Com Stock Issue 4 - - - - - 
+Special DPS - Common Stock Primary Issue - - - - - 
+Special DPS - Common Stock Issue 2 - - - - - 
+Special DPS - Common Stock Issue 3 - - - - - 
+Special DPS - Common Stock Issue 4 - - - - - 
+Gross Dividends - Common Stock 605.34 - 0.00 400.87 602.84 
+Pro Forma Stock Compensation Expense - - - - - 
+Net Income after Stock Based Comp. Exp. - - - - - 
+Basic EPS after Stock Based Comp. Exp. - - - - - 
+Diluted EPS after Stock Based Comp. Exp. - - - - - 
+Stock-Based Compensation, Supplemental 17.71 -2.26 39.45 35.26 -5.27 
+Interest Expense, Supplemental - - - - - 
+Interest Capitalized, Supplemental - - - - - 
+Depreciation, Supplemental 130.08 140.79 152.23 144.08 50.71 
+(Gain) Loss on Sale of Assets, Suppl. - - - - - 
+Impairment-Assets Held for Sale, Suppl. - - - - - 
+Impairment-Assets Held for Use, Suppl. 0.03 0.06 0.10 0.06 0.14 
+Litigation Charge, Supplemental - - - - - 
+Purchased R&D Written-Off, Supplemental - - - - - 
+Restructuring Charge, Supplemental - - - - - 

@@ -1,0 +1,97 @@
+Title: AMMB HLDGS BHD
+ID: 1015
+Category: Financials (Banking Services)
+BALANCE SHEET 
+Annual Standardised in Millions of Malaysian Ringgit 
+31-Mar-2023 31-Mar-2022 31-Mar-2021 31-Mar-2020 31-Mar-2019 
+Cash & Due from Banks 11,145.09 14,899.07 19,337.78 16,199.58 10,549.82 
+Other Earning Assets, Total 53,239.49 36,859.97 33,816.81 40,692.47 41,897.93 
+Interest-earning Deposits - - - - - 
+Trading Account Assets 12,770.91 7,216.56 9,561.97 12,545.86 19,365.60 
+FedFundsSold/ScrtyPurch UnderResaleAgrmt 467.03 446.81 552.34 1,035.71 386.68 
+Other Short Term Investments 921.11 1,400.67 1,690.58 2,376.83 763.92 
+Securities Held 13,469.70 9,037.77 4,192.42 4,852.81 5,146.32 
+Securities for Sale 25,610.73 18,177.46 17,386.81 19,423.36 15,709.87 
+Total Investment Securities 39,080.44 27,215.23 21,579.24 24,276.17 20,856.19 
+Other Earning Assets 0.00 580.71 432.68 457.91 525.55 
+Net Loans 128,242.61 118,065.69 112,478.32 105,950.93 100,419.65 
+Total Gross Loans 130,226.77 119,993.26 114,758.51 107,218.61 101,720.19 
+Loan Loss Allowances -1,984.17 -1,927.58 -2,280.19 -1,267.68 -1,300.54 
+Unearned Income - - - - - 
+Property/Plant/Equipment, Total - Gross 1,371.57 1,676.70 1,664.69 1,620.37 948.99 
+Buildings - Gross 33.80 53.50 53.50 63.33 67.55 
+Land/Improvements - Gross 246.56 255.86 253.04 239.89 216.54 
+Machinery/Equipment - Gross - - 8.55 7.91 9.86 
+Construction in Progress - Gross 24.25 4.39 7.47 24.40 7.17 
+Other Property/Plant/Equipment - Gross 1,066.95 1,362.96 1,350.68 1,292.75 657.74 
+Property/Plant/Equipment, Total - Net 391.55 370.34 486.69 571.82 168.22 
+Accumulated Depreciation, Total -980.02 -1,306.36 -1,178.01 -1,048.55 -780.77 
+Goodwill, Net 303.49 1,020.56 1,020.56 2,809.72 2,809.72 
+Goodwill - Gross 2,093.97 2,811.04 - - - 
+Accumulated Goodwill Amortization -1,790.48 -1,790.48 - - - 
+Intangibles, Net 207.15 379.35 423.39 451.79 570.01 
+Intangibles - Gross 1,286.03 1,636.74 1,573.62 1,492.31 1,640.43 
+Accumulated Intangible Amortization -1,078.88 -1,257.39 -1,150.23 -1,040.52 -1,070.41 
+Long Term Investments 1,631.60 604.54 588.94 699.28 710.09 
+LT Investment - Affiliate Companies 1,631.60 604.54 588.94 699.28 710.09 
+Other Long Term Assets, Total 220.66 220.88 136.67 53.78 71.19 
+Discontinued Operations - LT Asset 0.00 2.32 2.32 2.32 5.03 
+Defered Income Tax - Long Term Asset 220.66 218.55 134.35 51.46 66.16 
+Other Assets, Total 2,159.00 2,438.51 1,889.10 1,773.72 1,596.77 
+Interest Receivable 508.11 456.84 380.92 458.94 443.23 
+Other Real Estate Owned 2.64 2.63 2.62 2.61 2.44 
+Other Assets 1,648.25 1,979.03 1,505.56 1,312.18 1,151.11 
+Total Assets 197,540.63 174,858.91 170,178.25 169,203.09 158,793.40 
+Accounts Payable 2,570.66 2,866.53 2,358.97 3,168.08 2,996.04 
+Payable/Accrued - - - - - 
+Accrued Expenses - - - - - 
+Total Deposits 141,777.33 132,487.44 130,464.07 122,988.63 114,603.71 
+Non-Interest Bearing Deposits 38,135.79 33,709.68 28,095.91 22,721.48 19,464.53 
+Interest Bearing Deposits 92,179.29 88,883.17 92,447.28 90,245.23 87,451.46 
+Other Deposits - - - - - 
+Other Bearing Liabilities, Total - - - - - 
+Other Bearing Liabilities - - - - - 
+Acceptances Outstanding - - - - - 
+Total Short Term Borrowings 16,483.15 1,960.58 905.01 6,561.44 5,692.87 
+Commercial Paper - - - - - 
+Other Short Term Borrowings 16.47 377.86 94.83 208.73 353.45 
+FedFundsPurch/ScrtySoldUnderRepurchAgrmt 16,466.67 1,582.72 810.17 6,352.71 5,339.42 
+Current Port. of LT Debt/Capital Leases - - - - - 
+Other Current liabilities, Total 18.57 61.53 23.79 19.26 44.29 
+Dividends Payable - - - - - 
+Income Taxes Payable 18.57 61.53 23.79 19.26 44.29 
+Total Long Term Debt 16,716.22 14,841.59 13,832.07 11,934.96 12,747.34 
+Long Term Debt 16,482.37 14,650.12 13,558.60 11,618.07 12,747.34 
+Capital Lease Obligations 233.85 191.47 273.47 316.89 - 
+Total Debt 33,199.37 16,802.16 14,737.08 18,496.40 18,440.21 
+Deferred Income Tax 0.00 8.09 19.67 69.72 63.70 
+Deferred Income Tax - LT Liability 0.00 8.09 19.67 69.72 63.70 
+Minority Interest 0.86 1,199.10 949.58 979.27 999.50 
+Other Liabilities, Total 1,838.80 4,674.26 6,984.32 4,900.96 3,954.99 
+Discontinued Operations - Liabilities - - - - - 
+Reserves 10.59 13.25 19.23 38.94 178.53 
+Pension Benefits - Underfunded - - - - - 
+Other Liabilities 1,828.22 4,661.01 6,965.09 4,862.02 3,776.46 
+Total Liabilities 179,405.59 158,099.11 155,537.48 150,622.31 141,102.45 
+Redeemable Preferred Stock, Total - - - - - 
+Preferred Stock - Non Redeemable, Net - - - - - 
+Convertible Preferred Stock - Non Rdmbl - - - - - 
+Common Stock, Total 6,376.24 6,776.24 5,951.56 5,851.56 5,751.56 
+Common Stock 6,376.24 6,776.24 5,951.56 5,851.56 5,751.56 
+Additional Paid-In Capital - - - - - 
+Retained Earnings (Accumulated Deficit) 11,168.12 9,405.56 7,923.36 12,040.31 11,408.89 
+Treasury Stock - Common -28.58 -11.04 -20.97 -26.92 - 
+ESOP Debt Guarantee - - - 0.00 -31.48 
+Unrealized Gain (Loss) 511.31 499.23 708.79 635.31 479.97 
+Other Equity, Total 107.95 89.81 78.04 80.51 82.02 
+Other Equity - - - - - 
+Translation Adjustment 112.21 98.87 94.99 108.67 94.09 
+Minimum Pension Liability Adjustment - - - - - 
+Other Comprehensive Income -4.26 -9.06 -16.95 -28.16 -12.07 
+Total Equity 18,135.05 16,759.79 14,640.78 18,580.77 17,690.95 
+Total Liabilities & Shareholders' Equity 197,540.63 174,858.91 170,178.25 169,203.09 158,793.40 
+Shares Outstanding - Common Issue 2 - - - - - 
+Shares Outstanding - Common Issue 3 - - - - - 
+Shares Outstanding - Common Issue 4 - - - - - 
+Total Common Shares Outstanding 3,307.11 3,310.81 3,008.12 3,006.69 3,014.19 
+Shares Outs - Common Stock Primary Issue 3,307.11 3,310.81 3,008.12 3,006.69 3,014.19 

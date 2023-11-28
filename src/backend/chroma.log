@@ -1,0 +1,38 @@
+[33mWARNING[0m:  [28-11-2023 09:36:01] chroma_server_nofile is set to 65535, but this is less than current soft limit of 1048576. chroma_server_nofile will not be set.
+[32mINFO[0m:     [28-11-2023 09:36:01] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [28-11-2023 09:36:01] Starting component System
+[36mDEBUG[0m:    [28-11-2023 09:36:01] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [28-11-2023 09:36:01] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [28-11-2023 09:36:01] Starting component SqliteDB
+[36mDEBUG[0m:    [28-11-2023 09:36:01] Starting component Posthog
+[36mDEBUG[0m:    [28-11-2023 09:36:01] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [28-11-2023 09:36:01] Starting component SegmentAPI
+[32mINFO[0m:     [28-11-2023 09:36:01] Started server process [[36m19708[0m]
+[32mINFO[0m:     [28-11-2023 09:36:01] Waiting for application startup.
+[32mINFO[0m:     [28-11-2023 09:36:01] Application startup complete.
+[32mINFO[0m:     [28-11-2023 09:36:01] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [28-11-2023 09:44:05] 127.0.0.1:46886 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [28-11-2023 09:44:05] 127.0.0.1:46886 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [28-11-2023 09:44:05] 127.0.0.1:46886 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [28-11-2023 09:48:46] 127.0.0.1:55706 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [28-11-2023 09:48:46] 127.0.0.1:55706 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [28-11-2023 09:48:46] 127.0.0.1:55706 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [28-11-2023 09:51:15] 127.0.0.1:40400 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [28-11-2023 09:51:15] 127.0.0.1:40400 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [28-11-2023 09:51:15] 127.0.0.1:40400 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [28-11-2023 09:53:35] 127.0.0.1:59636 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [28-11-2023 09:53:35] 127.0.0.1:59636 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [28-11-2023 09:53:35] 127.0.0.1:59636 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [28-11-2023 09:54:11] 127.0.0.1:48400 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [28-11-2023 09:54:11] 127.0.0.1:48400 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [28-11-2023 09:54:11] 127.0.0.1:48400 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [28-11-2023 09:57:17] 127.0.0.1:34374 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [28-11-2023 09:57:17] 127.0.0.1:34374 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [28-11-2023 09:57:17] 127.0.0.1:34374 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [28-11-2023 09:57:18] 127.0.0.1:34374 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[36mDEBUG[0m:    [28-11-2023 09:57:18] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [28-11-2023 09:57:18] 127.0.0.1:34374 - "POST /api/v1/collections/3d6fad61-c29a-404f-a87e-c02fcc224470/add HTTP/1.1" 201
+[32mINFO[0m:     [28-11-2023 10:00:39] 127.0.0.1:52088 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [28-11-2023 10:00:39] 127.0.0.1:52088 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [28-11-2023 10:00:39] 127.0.0.1:52088 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [28-11-2023 10:01:13] 127.0.0.1:55662 - "POST /api/v1/collections/3d6fad61-c29a-404f-a87e-c02fcc224470/query HTTP/1.1" 200

@@ -23,6 +23,11 @@ body {
   height: 75vh;
 }
 
+#chat-view {
+  background-color: #2e2e2e;
+  overflow-y: auto;
+}
+
 #conversation-section {
   display: flex;
   justify-content: center;

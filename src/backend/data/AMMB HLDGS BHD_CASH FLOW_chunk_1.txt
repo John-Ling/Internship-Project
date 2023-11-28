@@ -1,0 +1,76 @@
+Title: AMMB HLDGS BHD
+ID: 1015
+Category: Financials (Banking Services)
+CASH FLOW 
+Annual Standardised in Millions of Malaysian Ringgit 
+31-Mar-2023 31-Mar-2022 31-Mar-2021 31-Mar-2020 31-Mar-2019 
+Net Income/Starting Line 2,255.44 1,804.75 -3,483.50 1,782.86 2,095.37 
+Depreciation/Depletion 130.08 140.79 152.23 144.08 50.71 
+Depreciation 130.08 140.79 152.23 144.08 50.71 
+Amortization 84.75 107.20 110.70 108.91 118.39 
+Amortization of Acquisition Costs - - - - - 
+Amortization of Intangibles 84.75 107.20 110.70 108.91 118.39 
+Deferred Taxes - - - - - 
+Non-Cash Items -155.26 364.03 4,730.98 -188.58 -335.25 
+Accounting Change - - - - - 
+Discontinued Operations -84.95 - - - - 
+Unusual Items 178.45 270.26 4,748.21 -111.92 -5.27 
+Equity in Net Earnings (Loss) -69.86 -44.09 -43.81 3.14 -20.43 
+Other Non-Cash Items -178.89 137.87 26.59 -79.80 -309.56 
+Changes in Working Capital 3,653.77 -2,950.39 -1,002.54 11,486.48 8,825.55 
+Loans Origination - Operating - - - - - 
+Other Assets & Liabilities, Net - - - - - 
+Loan Loss Provision 732.19 554.56 1,468.55 666.41 536.10 
+Other Assets -1,828.11 -491.19 595.26 2,021.43 -142.85 
+Other Liabilities 23,508.77 1,551.27 1,088.38 9,284.06 21,048.61 
+Other Operating Cash Flow 1,199.54 985.66 1,073.48 -1,169.68 -665.86 
+Investment Securities, Gains/Losses -9,146.03 2,345.53 3,071.79 6,757.58 -5,801.66 
+Loans, Gains/Losses -10,812.60 -7,896.22 -8,300.01 -6,073.32 -6,148.78 
+Cash from Operating Activities 5,968.79 -533.63 507.88 13,333.73 10,754.78 
+Capital Expenditures -124.69 -100.43 -132.12 -145.79 -123.56 
+Purchase of Fixed Assets -57.51 -25.43 -39.71 -58.44 -31.73 
+Purchase/Acquisition of Intangibles -67.18 -75.01 -92.42 -87.36 -91.84 
+Other Investing Cash Flow Items, Total -10,138.17 -4,494.83 2,723.02 -3,415.15 -8,037.64 
+Sale/Maturity of Investment  - - - - - 
+Purchase of Investments - - - 0.00 -6.00 
+Intangible, Net - - - - - 
+Foreclosed Real Estate - - - - - 
+Sale of Intangible Assets - - - - - 
+Acquisition of Business - - - - - 
+Sale of Business 1,126.03 - - - - 
+Sale of Fixed Assets 20.59 0.36 3.61 0.44 2.86 
+Investment, Net -11,249.82 -4,502.19 2,715.01 -3,431.76 -8,055.01 
+Other Investing Cash Flow -34.97 7.00 4.40 16.18 20.51 
+Cash from Investing Activities -10,262.86 -4,595.26 2,590.90 -3,560.94 -8,161.21 
+Financing Cash Flow Items -1,077.97 -98.48 -144.51 -131.52 -237.00 
+Deposits - - - - - 
+Other Financing Cash Flow -1,077.97 -98.48 -144.51 -131.52 -237.00 
+Total Cash Dividends Paid -364.17 0.00 -219.70 -632.97 -452.13 
+Cash Dividends Paid - Common -364.17 0.00 -219.70 -632.97 -452.13 
+Issuance (Retirement) of Stock, Net 0.00 824.68 - - - 
+Sale/Issuance of Common 0.00 824.68 - - - 
+Repurchase/Retirement of Common - - - - - 
+Common Stock, Net 0.00 824.68 - - - 
+Warrants Converted - - - - - 
+Sale/Issuance of Common/Preferred - - - - - 
+Sale/Issuance of Preferred - - - - - 
+Repurchase/Retirement of Preferred - - - - - 
+Preferred Stock, Net - - - - - 
+Options Exercised - - - - - 
+Issuance (Retirement) of Debt, Net -80.42 14.35 459.08 -566.52 -350.00 
+Short Term Debt Issued - - - - - 
+Short Term Debt Reduction - - - - - 
+Short Term Debt, Net - - - - - 
+Long Term Debt Issued 0.00 100.00 550.00 - 1,500.00 
+Long Term Debt Reduction -80.42 -85.65 -90.92 -566.52 -1,850.00 
+Long Term Debt, Net -80.42 14.35 459.08 -566.52 -350.00 
+Cash from Financing Activities -1,522.57 740.56 94.87 -1,331.00 -1,039.13 
+Foreign Exchange Effects 0.15 -0.56 0.19 0.08 -0.25 
+Net Change in Cash -5,816.50 -4,388.89 3,193.84 8,441.87 1,554.19 
+Net Cash - Beginning Balance 14,516.86 18,905.76 15,711.92 7,270.05 5,715.86 
+Net Cash - Ending Balance 8,700.37 14,516.86 18,905.76 15,711.92 7,270.05 
+Cash Interest Paid - - - - - 
+Cash Taxes Paid 610.35 234.20 320.75 475.78 262.48 
+Reported Cash from Operating Activities - - - - - 
+Reported Cash from Investing Activities - - - - - 
+Reported Cash from Financing Activities - - - - - 

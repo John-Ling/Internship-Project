@@ -1,0 +1,6 @@
+src/backend/bin
+src/backend/lib
+src/backend/lib64
+src/backend/pyvenv.cfg
+src/backend/__pycache__
+src/backend/share

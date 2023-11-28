@@ -1,0 +1,35 @@
+Title: MR D.I.Y. GROUP
+ID: 5296
+Category: Consumer Cyclicals (Specialty Retailers)
+Operating Lease Payments Due in Year 5 - - - 
+Operating Lease Payments Due in Year 6 - - - 
+Operating Lease Pymts. Due in 2-3 Years - - - 
+Operating Lease Pymts. Due in 4-5 Years - - - 
+Oper. Lse. Pymts. Due in Year 6 & Beyond - - - 
+Total Funded Status - - - 
+Plan Assets - Domestic - - - 
+Pension Obligation - Domestic - - - 
+Unfunded Plan Obligations - - - 
+Pension Obligation - Foreign - - - 
+Plan Assets - Foreign - - - 
+Funded Status - Domestic - - - 
+Funded Status - Foreign - - - 
+Period End Assumptions - - - 
+Discount Rate - Domestic - - - 
+Expected Rate of Return - Domestic - - - 
+Compensation Rate - Domestic - - - 
+Discount Rate - Foreign - - - 
+Compensation Rate - Foreign - - - 
+Pension Payment Rate - Foreign - - - 
+Net Assets Recognized on Balance Sheet - - - 
+Accrued Liabilities - Domestic - - - 
+Accrued Liabilities - Foreign - - - 
+Asset Allocation - - - 
+Equity % - Domestic - - - 
+Other Investments % - Domestic - - - 
+Equity % - Foreign - - - 
+Debt Securities % - Foreign - - - 
+Real Estate % - Foreign - - - 
+Other Investments % - Foreign - - - 
+Total Plan Obligations - - - 
+Total Plan Assets - - - 

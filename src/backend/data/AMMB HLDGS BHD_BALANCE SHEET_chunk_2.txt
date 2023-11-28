@@ -1,0 +1,103 @@
+Title: AMMB HLDGS BHD
+ID: 1015
+Category: Financials (Banking Services)
+Treas Shares - Common Stock Prmry Issue 7.08 3.37 6.07 7.50 0.00 
+Treasury Shares - Common Issue 2 - - - - - 
+Treasury Shares - Common Issue 3 - - - - - 
+Treasury Shares - Common Issue 4 - - - - - 
+Total Preferred Shares Outstanding - - - - - 
+Shares Outstanding - Preferred Issue 1 - - - - - 
+Treasury Shares - Preferred Issue 1 - - - - - 
+Treasury Shares - Preferred Issue 2 - - - - - 
+Treasury Shares - Preferred Issue 3 - - - - - 
+Treasury Shares - Preferred Issue 4 - - - - - 
+Treasury Shares - Preferred Issue 5 - - - - - 
+Treasury Shares - Preferred Issue 6 - - - - - 
+Minority Interest - Redeemable - - - - - 
+Minority Interest - Non Redeemable 0.86 1,199.10 949.58 979.27 999.50 
+Total Equity & Minority Interest 18,135.91 17,958.89 15,590.36 19,560.04 18,690.45 
+Full-Time Employees 7,918.00 9,000.00 10,000.00 10,000.00 9,000.00 
+Part-Time Employees - - - - - 
+Number of Common Shareholders 29,650.00 29,608.00 35,794.00 28,305.00 23,268.00 
+Other Property/Plant/Equipment - Net 391.55 370.34 486.69 571.82 168.22 
+Intangibles - Net 510.64 1,399.91 1,443.95 3,261.51 3,379.73 
+Goodwill - Net - - 1,020.56 2,809.72 2,809.72 
+Accumulated Goodwill Amortization Suppl. 1,790.48 1,790.48 - - - 
+Accumulated Intangible Amort, Suppl. 1,078.88 1,257.39 1,150.23 1,040.52 1,070.41 
+Deferred Revenue - Current - - - - - 
+Deferred Revenue - Long Term 75.87 74.96 74.98 76.67 84.00 
+Curr Derivative Liab. Hedging, Suppl. - - - - - 
+Curr Derivative Liab. Spec./Trdg, Suppl. - - - - - 
+Non-Curr Derivative Liab. Hedging, Suppl 964.32 803.56 1,269.81 1,960.10 825.49 
+Non-Curr Derivative Liab Spec/Trdg Suppl - - - - - 
+Total Risk-Weighted Capital 123,730.98 117,801.30 113,472.95 109,007.89 103,292.43 
+Capital Adequacy - Core Tier 1 Capital % 12.84 12.34 11.33 12.64 12.33 
+Leverage Ratio (Basel 3) - - - - - 
+Net Stable Funding Ratio (Basel 3) 107.30 - - - - 
+Capital Adequacy - Tier 2 Capital % 3.14 3.11 3.15 3.36 3.54 
+Capital Adequacy - Tier 3 Capital % - - - - - 
+Capital Adequacy -Tier 1 Capital (Value) 15,892.82 14,539.52 12,859.96 13,780.88 12,733.82 
+Capital Adequacy -Tier 2 Capital (Value) 3,883.00 3,667.31 3,571.77 3,657.97 3,652.66 
+Capital Adequacy -Tier 3 Capital (Value) - - - - - 
+Capital Adequacy - Core Tier 1 (Value) 15,892.37 14,539.09 12,859.51 13,780.43 12,733.38 
+Capital Adequacy - Tier 1 Capital % 12.85 12.34 11.33 12.64 12.33 
+Capital Adequacy - Hybrid Tier 1 (Value) 0.46 0.43 0.45 0.46 0.44 
+Capital Adequacy - Total Capital (Value) 19,775.82 18,206.82 16,431.73 17,438.85 16,386.47 
+Liquidity Coverage Ratio (Basel 3) 149.20 - - - - 
+Capital Adequacy - Total Capital % 15.98 15.46 14.48 16.00 15.86 
+Trading Account 12,770.91 7,216.56 9,561.97 12,545.86 19,365.60 
+Credit Exposure - - - - - 
+Non-Performing Loans 1,896.45 1,676.04 1,770.32 1,852.63 1,626.18 
+Assets under Management 58,600.00 58,200.00 57,900.00 42,000.00 40,500.00 
+Tangible Book Value, Common Equity 17,624.40 15,359.88 13,196.83 15,319.27 14,311.23 
+Reported Total Assets - - - - - 
+Reported Total Liabilities - - - - - 
+Shareholders' Equity Excl. Stock Subscr. - - - - - 
+Reported Shareholder's Equity - - - - - 
+Reported Net Assets - - - - - 
+Reported Net Assets to Total Assets - - - - - 
+Reported Return on Assets - - - - - 
+Reported Return on Equity - - - - - 
+Musharaka Investments - - - - - 
+Mudaraba Investments - - - - - 
+Sukuk Investments - - - - - 
+Wakala Investments - - - - - 
+Other Islamic Investments - 579.30 399.39 299.54 - 
+Total Islamic Investments, Supplemental - 579.30 399.39 299.54 - 
+Murabaha Receivables - - - - - 
+Istisna Receivables - - - - - 
+Musharaka Financing - - - - - 
+Mudaraba Financing - - - - - 
+Ijara Financing - - - - - 
+Wakala Receivables - - - - - 
+Other Islamic Receivables - - - - - 
+Total Islamic Financing Assets, Suppl. - - - - - 
+Murabaha Payables - - - - - 
+Ijara Lease Payables - - - - - 
+Istisna Payables - - - - - 
+Sukuk Financing 4,395.00 4,395.00 4,295.00 3,745.00 3,745.00 
+Wakala Payables 16.47 377.86 94.83 208.73 353.45 
+Other Islamic Payables - - - - - 
+Unrestricted Investment Accounts - - - - - 
+Other Islamic Deposits - - - - - 
+Total Islamic Debt and Deposits, Suppl. 4,411.47 4,772.86 4,389.83 3,953.73 4,098.45 
+Total Long Term Debt, Supplemental - - - - - 
+Long Term Debt Maturing within 1 Year - - - - - 
+Long Term Debt Maturing in Year 2 - - - - - 
+Long Term Debt Maturing in Year 3 - - - - - 
+Long Term Debt Maturing in Year 4 - - - - - 
+Long Term Debt Maturing in Year 5 - - - - - 
+Long Term Debt Maturing in 2-3 Years - - - - - 
+Long Term Debt Maturing in 4-5 Years - - - - - 
+Long Term Debt Matur. in Year 6 & Beyond - - - - - 
+Total Capital Leases, Supplemental - - - - - 
+Capital Lease Payments Due in Year 1 - - - - - 
+Capital Lease Payments Due in Year 2 - - - - - 
+Capital Lease Payments Due in Year 3 - - - - - 
+Capital Lease Payments Due in 2-3 Years - - - - - 
+Capital Lease Payments Due in Year 4 - - - - - 
+Capital Lease Payments Due in Year 5 - - - - - 
+Capital Lease Payments Due in 4-5 Years - - - - - 
+Cap. Lease Pymts. Due in Year 6 & Beyond - - - - - 
+Total Operating Leases, Supplemental - - - - 143.17 
+Operating Lease Payments Due in Year 1 - - - - 66.12 
