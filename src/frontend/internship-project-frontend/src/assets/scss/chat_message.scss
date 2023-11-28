@@ -6,11 +6,22 @@ div {
 }
 
 .message {
-	width: 50%;
+	animation: hidden-fade 0.5s;
+	animation-iteration-count: 1;
+	width: 40vw;
 	margin: 0.5rem;
 }
 
-
+@keyframes hidden-fade {
+	from {
+		opacity: 0;
+		transform: translateY(150px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
 
 .bot-message {
 	border: solid 3px $yellow;
