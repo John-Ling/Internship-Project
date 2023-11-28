@@ -74,10 +74,10 @@ function App() {
 // Is Mr Diy a good long term investment?
 // 			`
 			console.log("Calling API");
-			const response = await fetch("https://api.openai.com/v1/chat/completions", {
+			const response = await fetch("http://127.0.0.1:8080/query", {
 				method: "POST",
-				headers: {"Content-Type": "application/json", "Authorization": "Bearer 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"},
-				body: JSON.stringify({"model": "gpt-3.5-turbo", "messages": [{"role": "system", "content": "You are a helpful assistant"}, {"role": "user", "content": query}]})
+				headers: {"Content-Type": "application/json"},
+				body: JSON.stringify({"query": query})
 				// body: JSON.stringify({"prompt": `${query} please keep your answer concise and under 1024 tokens:`, n_predict: 1024})
 			})
 			return await response.json();
@@ -87,9 +87,10 @@ function App() {
 
 		let llmResponse: Promise<string> = call_api(message.content);
 		llmResponse.then((response: any) => {
-			console.log(response.choices[0].message.content)
-			let botMessage: message = {content: response.choices[0].message.content, fromBot: true}
-			setMessages(oldMessages => [...oldMessages, botMessage]);
+			console.log(response["documents"][0][0]);
+			// console.log(response.choices[0].message.content)
+			// let botMessage: message = {content: response.choices[0].message.content, fromBot: true}
+			// setMessages(oldMessages => [...oldMessages, botMessage]);
 		});
 
 		return;

@@ -1,5 +1,5 @@
 from sentence_transformers import SentenceTransformer
-from flask import Flask, request
+from flask import Flask, request, jsonify, Response
 import chromadb
 import os
 
@@ -30,10 +30,18 @@ app = Flask(__name__)
 
 
 # todo change this use to body instead of url parameters
-@app.route("/query", methods=["POST"])
+@app.route("/query", methods=["POST", "OPTIONS"])
 def query():
-	args = request.args
-	query = args.get("query")
+	ORIGIN = "*" # pls change this later
+	if request.method == "OPTIONS":
+		response = Response()
+		response.headers["access-control-allow-origin"] = ORIGIN
+		response.headers["access-control-allow-headers"] = ORIGIN
+		response.headers["access-control-allow-methods"] = ORIGIN
+		return response
+
+	body = request.get_json()
+	query = body["query"]
 	embedding = MODEL.encode(query).tolist()
 	dbResponse = collection.query(
 		query_embeddings=[embedding],
@@ -41,7 +49,9 @@ def query():
 		include=["distances", "embeddings", "documents"]
 	)
 
-	return dbResponse['documents'][0][0]
+	response = jsonify(dbResponse)
+	response.headers.add("access-control-allow-origin", ORIGIN)
+	return response
 
 if __name__ == "__main__":
 	app.run(host="0.0.0.0", port=8080)
