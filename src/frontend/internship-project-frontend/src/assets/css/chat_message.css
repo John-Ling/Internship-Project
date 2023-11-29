@@ -3,11 +3,27 @@ div {
   background-color: #242424;
 }
 
+.container {
+  display: flex;
+  background-color: #2e2e2e;
+}
+
+.user {
+  justify-content: right;
+}
+
+.bot {
+  justify-content: left;
+}
+.bot div {
+  max-width: 50%;
+}
+
 .message {
   animation: hidden-fade 0.5s;
   animation-iteration-count: 1;
-  width: 40vw;
   margin: 0.5rem;
+  background-color: #2e2e2e;
 }
 
 @keyframes hidden-fade {
@@ -26,6 +42,15 @@ div {
 
 .user-message {
   border: solid 3px #7aa2f7;
+}
+
+@media screen and (max-width: 600px) {
+  .message {
+    width: 80vw;
+  }
+  .bot div {
+    max-width: unset;
+  }
 }
 
 /*# sourceMappingURL=chat_message.css.map */

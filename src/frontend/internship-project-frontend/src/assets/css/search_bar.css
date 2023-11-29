@@ -1,12 +1,16 @@
 #search-bar {
   margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 #search-bar input {
-  margin: 0 3px;
   color: #F0F0F0;
+  margin: 8px;
 }
 #search-bar input[type=text] {
-  width: 50vw;
+  font-family: "meslolgs_nfregular";
+  width: 40vw;
   padding: 0.75rem 1.25rem;
   border: 1px;
   border-radius: 5px;
@@ -17,6 +21,7 @@
   outline: none;
 }
 #search-bar input[type=submit] {
+  font-family: "meslolgs_nfregular";
   padding: 0.75rem;
   border: 1px;
   background-color: #F0F0F0;
@@ -25,6 +30,19 @@
 #search-bar input[type=submit]:hover {
   background-color: #e0af68;
   cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  #search-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+  #search-bar input[type=text] {
+    width: 70vw;
+  }
+  #search-bar input[type=submit] {
+    max-width: 30vw;
+  }
 }
 
 /*# sourceMappingURL=search_bar.css.map */

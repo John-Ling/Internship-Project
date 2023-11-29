@@ -20,9 +20,9 @@ body {
 	border: solid 3px $yellow;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 	padding: 0.5rem;
-	height: 75vh;
+	height: 95vh;
+	width: 85vw;
 }
 
 #chat-view {
@@ -36,6 +36,15 @@ body {
 	align-items: center;
 	height: 75vh;
 }
+
 .greeting-placeholder {
 	justify-self: center;
+}
+
+@media screen and (max-width: 500px) {
+	#main-view {
+		padding: 0;
+		height: 100vh;
+		width: 100vw;
+	}
 }

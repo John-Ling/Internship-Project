@@ -6,11 +6,13 @@ interface ChatMessageProps {
 	message: message;
 }
 
-export const ChatMessage:React.FC<ChatMessageProps> = ({message}) => {
+export const ChatMessage: React.FC<ChatMessageProps> = ({ message }) => {
 	return (
 		<>
-			<div className={message.fromBot ? "bot-message message" : "user-message message"}>
-				<p>{message.content}</p>
+			<div className={message.fromBot ? "container bot" : "container user"}>
+				<div className={message.fromBot ? "bot-message message" : "user-message message"}>
+					<p>{message.content}</p>
+				</div>
 			</div>
 		</>
 	);

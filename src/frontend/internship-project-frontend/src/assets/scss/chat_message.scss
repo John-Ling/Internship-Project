@@ -5,11 +5,27 @@ div {
 	background-color: $background;
 }
 
+.container {
+	display: flex;
+	background-color: $background-darker;
+}
+
+.user {
+	justify-content: right;
+}
+
+.bot {
+	justify-content: left;
+	div {
+		max-width: 50%;
+	}
+}
+
 .message {
 	animation: hidden-fade 0.5s;
 	animation-iteration-count: 1;
-	width: 40vw;
 	margin: 0.5rem;
+	background-color: $background-darker;
 }
 
 @keyframes hidden-fade {
@@ -30,4 +46,16 @@ div {
 
 .user-message {
 	border: solid 3px $blue;
+}
+
+
+@media screen and (max-width: 600px) {
+	.message {
+		width: 80vw;
+	}
+	.bot {
+		div {
+			max-width: unset;
+		}
+	}
 }

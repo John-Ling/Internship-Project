@@ -1,3 +1,4 @@
+src/backend/api/*env
 src/backend/bin
 src/backend/lib
 src/backend/lib64
@@ -6,3 +7,4 @@ src/backend/__pycache__
 src/backend/share
 src/backend/excel-data
 src/backend/data
+src/chroma.log
