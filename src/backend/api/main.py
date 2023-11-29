@@ -7,6 +7,14 @@ import os
 
 load_dotenv()
 
+def load_data(path):
+	content, ids = [], []
+	for index, file in enumerate(os.listdir(path)):
+		with open(os.path.join(path, file), 'r') as f:
+			content.append(f.read())
+			ids.append(f"id{index+1}")
+	return (content, ids)
+
 print("Setting up embedding model")
 MODEL = SentenceTransformer("all-MiniLM-L6-v2")
 
@@ -15,6 +23,12 @@ CLIENT = chromadb.HttpClient(host="localhost", port=8000)
 
 print("Getting collection")
 COLLECTION = CLIENT.get_or_create_collection(name="main-collection")
+
+# data, ids = load_data("../data")
+# COLLECTION.add(
+# 	documents=data,
+# 	ids=ids
+# )
 
 print("Starting Flask")
 app = Flask(__name__)
@@ -35,7 +49,7 @@ def search():
 	embedding = MODEL.encode(query).tolist()
 	dbResponse = COLLECTION.query(
 		query_embeddings=[embedding],
-		n_results=5,
+		n_results=2,
 		include=["distances", "embeddings", "documents"]
 	)
 

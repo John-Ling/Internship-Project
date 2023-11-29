@@ -4,3 +4,5 @@ src/backend/lib64
 src/backend/pyvenv.cfg
 src/backend/__pycache__
 src/backend/share
+src/backend/excel-data
+src/backend/data
