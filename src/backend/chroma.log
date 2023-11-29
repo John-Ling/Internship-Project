@@ -238,3 +238,4 @@
 [32mINFO[0m:     [28-11-2023 16:34:36] 127.0.0.1:59712 - "POST /api/v1/collections/3d6fad61-c29a-404f-a87e-c02fcc224470/query HTTP/1.1" 200
 [32mINFO[0m:     [28-11-2023 16:35:39] 127.0.0.1:59462 - "POST /api/v1/collections/3d6fad61-c29a-404f-a87e-c02fcc224470/query HTTP/1.1" 200
 [32mINFO[0m:     [28-11-2023 16:36:43] 127.0.0.1:45296 - "POST /api/v1/collections/3d6fad61-c29a-404f-a87e-c02fcc224470/query HTTP/1.1" 200
+[32mINFO[0m:     [28-11-2023 17:40:02] 127.0.0.1:57030 - "POST /api/v1/collections/3d6fad61-c29a-404f-a87e-c02fcc224470/query HTTP/1.1" 200

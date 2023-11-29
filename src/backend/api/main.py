@@ -81,8 +81,6 @@ def query_llm(query, context):
 									  {"role": "user", "content": prompt}
 								]})
 	
-	if response.status_code != 200:
-		print(f"Error {response.status_code}")
 	return response.json()
 
 if __name__ == "__main__":
