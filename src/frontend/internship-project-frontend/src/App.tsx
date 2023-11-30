@@ -1,6 +1,5 @@
-import { useState } from 'react';
+import { useState, createContext } from 'react';
 import { SearchBar } from './components/SearchBar';
-import { GreetingPage } from './components/GreetingPage';
 import { ChatMessage } from './components/ChatMessage';
 import { message } from "./types";
 import "./assets/css/index.css";
@@ -28,7 +27,7 @@ function App() {
 				body: JSON.stringify({"query": query, "context": context})
 			}).then(response => response.json());
 
-			console.log("Response")
+			console.log("Response");``
 			console.log(llmResponse);
 			return llmResponse;
 		}
@@ -48,7 +47,6 @@ function App() {
 	return (
 		<>
 			<div id="main-view">
-				<GreetingPage visibility={false}></GreetingPage>
 				<div id="chat-view">
 					{chatMessages}
 				</div>

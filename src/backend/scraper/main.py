@@ -8,19 +8,18 @@ def main():
 	stockCodes = []
 
 	# get stock codes for top 1000 stocks in malaysia
-	# for i in range(1, PAGES+1):
-	# 	print("Getting stock codes...", end=" ")
-	# 	stockCodes += get_stock_codes(f"https://www.bursamarketplace.com/index.php?tpl=stock_ajax&type=listing&pagenum={i}&sfield=name&stype=asc&midcap=0")
-	# 	print("Done")
+	for i in range(1, PAGES+1):
+		print("Getting stock codes...", end=" ")
+		stockCodes += get_stock_codes(f"https://www.bursamarketplace.com/index.php?tpl=stock_ajax&type=listing&pagenum={i}&sfield=name&stype=asc&midcap=0")
+		print("Done")
 
-	# # get financial data for those companies
-	# for code in stockCodes:
-	# 	print("Fetching excel data...", end=" ")
-	# 	company_info(code)
-	# 	print("Done")
+	# get financial data for those companies
+	for code in stockCodes:
+		print("Fetching excel data...", end=" ")
+		company_info(code)
+		print("Done")
 	
 	# convert and chunk excel documents
-	
 	for file in os.listdir("../excel-data"):
 		print("Chunking File...", end=" ")
 		excel_to_text(os.path.join("../excel-data", file));
