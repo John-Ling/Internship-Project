@@ -8,12 +8,25 @@ import os
 load_dotenv()
 
 def load_data(path):
-	content, ids = [], []
+	content, ids, metadata = [], [], []
 	for index, file in enumerate(os.listdir(path)):
+		tmp = {}
 		with open(os.path.join(path, file), 'r') as f:
 			content.append(f.read())
-			ids.append(f"id{index+1}")
-	return (content, ids)
+			
+			# determine content type using filename
+			TYPES = ["BALANCE SHEET", "CASH FLOW", "KEY STATS", "INCOME STATEMENT"]
+			for type in TYPES:
+				if type in file:					
+					tmp["type"] = type.lower()
+
+		
+		with open(os.path.join(path, file), 'r') as f:
+			name = f.readline()[7:].strip().lower()
+			tmp["name"] = name
+		metadata.append(tmp)
+		ids.append(f"id{index+1}")
+	return content, ids, metadata
 
 print("Setting up embedding model")
 MODEL = SentenceTransformer("all-MiniLM-L6-v2")
@@ -26,11 +39,16 @@ MAIN_COLLECTION = CLIENT.get_or_create_collection(name="main-collection", metada
 
 print("Getting names collection")
 
-# data, ids = load_data("../data")
-# MAIN_COLLECTION.add(
-# 	documents=data,
-# 	ids=ids
-# )
+data, ids, metadata = load_data("../data")
+print(data[0])
+print(ids[0])
+print(metadata[0:3])
+
+MAIN_COLLECTION.add(
+	documents=data,
+	ids=ids,
+	metadatas=metadata
+)
 
 print("Starting Flask")
 app = Flask(__name__)
