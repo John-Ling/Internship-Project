@@ -18,7 +18,8 @@ function App() {
 				body: JSON.stringify({"query": query})
 			}).then(response => response.json());
 			
-			let context: string = response["documents"][0][0];
+			console.log(response)
+			let context: string = response["context"];
 			console.log(context);
 			
 			const llmResponse = await fetch("http://127.0.0.1:8080/query", {

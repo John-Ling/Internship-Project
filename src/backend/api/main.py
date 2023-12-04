@@ -4,6 +4,9 @@ from dotenv import load_dotenv
 import requests
 import chromadb
 import os
+import json
+import difflib
+from names import names
 
 load_dotenv()
 
@@ -13,13 +16,12 @@ def load_data(path):
 		tmp = {}
 		with open(os.path.join(path, file), 'r') as f:
 			content.append(f.read())
-			
+
 			# determine content type using filename
 			TYPES = ["BALANCE SHEET", "CASH FLOW", "KEY STATS", "INCOME STATEMENT"]
 			for type in TYPES:
 				if type in file:					
 					tmp["type"] = type.lower()
-
 		
 		with open(os.path.join(path, file), 'r') as f:
 			name = f.readline()[7:].strip().lower()
@@ -37,18 +39,16 @@ CLIENT = chromadb.HttpClient(host="localhost", port=8000)
 print("Getting main collection")
 MAIN_COLLECTION = CLIENT.get_or_create_collection(name="main-collection", metadata={"hnsw:space": "l2"})
 
-print("Getting names collection")
+# data, ids, metadata = load_data("../data")
+# print(data[0])
+# print(ids[0])
+# print(metadata[0:3])
 
-data, ids, metadata = load_data("../data")
-print(data[0])
-print(ids[0])
-print(metadata[0:3])
-
-MAIN_COLLECTION.add(
-	documents=data,
-	ids=ids,
-	metadatas=metadata
-)
+# MAIN_COLLECTION.add(
+# 	documents=data,
+# 	ids=ids,
+# 	metadatas=metadata
+# )
 
 print("Starting Flask")
 app = Flask(__name__)
@@ -66,14 +66,35 @@ def search():
 
 	body = request.get_json()
 	query = body["query"]
-	embedding = MODEL.encode(query).tolist()
-	dbResponse = MAIN_COLLECTION.query(
-		query_embeddings=[embedding],
-		n_results=2,
-		include=["distances", "embeddings", "documents"]
-	)
 
-	response = jsonify(dbResponse)
+	CONTEXT = "Extract the names of companies from any prompt you receive. You should return your answer as JSON with a string array of the names you extract. The array should be under the key called \"name\""
+	response = requests.post("https://api.openai.com/v1/chat/completions", 
+						  headers={"Authorization": f"Bearer {os.environ['OPENAI_API_KEY']}", "Content-Type": "application/json"}, 
+						  json={"model": "gpt-3.5-turbo", "temperature": 0.7,
+			  					"messages": [
+									  {"role": "system", "content": CONTEXT},
+									  {"role": "user", "content": query}
+								]})
+	
+	data = response.json()
+	context = ""
+	embedding = MODEL.encode(query).tolist()
+	for name in json.loads(data["choices"][0]["message"]["content"])["name"]:
+		name = name.lower()
+		dbName = difflib.get_close_matches(str(name), names, 1)[0]
+		dbResponse = MAIN_COLLECTION.query(
+			query_embeddings=embedding,
+			n_results=1,
+			where={"$and": [
+					{"name": dbName}, 
+					{"type": "key stats"}
+				]
+			},
+			include=["documents"]
+		)
+		context += f"{dbResponse['documents'][0][0]}\n"
+
+	response = jsonify({"context": context})
 	response.headers.add("access-control-allow-origin", ORIGIN)
 	return response
 
@@ -109,7 +130,7 @@ def query_llm(query, context):
 	You are an experienced financial advisor who uses your skills to advise your clients. 
 	Your speech should not contain any swears and should be formal. 
 	You want to be very specific and include specific numbers you used to make your decision in your answer.
-	Keep your answers concise and below 300 words.
+	Keep your answers concise and below 300 words. Speak with conviction and certainty.
 
 	You will be provided with a context. Depending on the type of question you will be asked, you may ues it to create your answer.
 	Context: {context}
@@ -128,7 +149,11 @@ def query_llm(query, context):
 	You must only use your own knowledge to create a generic explanation for the concept. You are not allowed to use the context. Ignore any of the context provided.
 	An example type 2 question would be "Define income before tax." or "What does a low growth rate mean?".
 
-	Type 4: The user has asked a question that does not contain a company name or is related to finance. For those questions you must respond with the phrase "This question no apply".
+	Type 4: The user will ask to compare 2 or more companies. You will be provided with the key stats for each company as context. 
+	You must analyse each stats sheet to conclude which company has the best statistics. You are only allowed to use the context provided. You may not use your own knowledge.
+	An example Type 4 question would be "Which is better x or y" or "Compare x, y and z" or "Is x better then y" where x, y and z are different companies. 
+
+	Type 5: The user has asked a question that does not contain a company name or is related to finance. For those questions you must respond with the phrase "This question no apply".
 	An example type 3 question would be "What is the weather like" or "How much water should I be drinking" or "Voice your opinion on Israel vs Palestine".
 	"""
 	

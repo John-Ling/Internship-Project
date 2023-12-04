@@ -24,6 +24,7 @@ div {
   animation-iteration-count: 1;
   margin: 0.5rem;
   background-color: #2e2e2e;
+  white-space: pre-wrap;
 }
 
 @keyframes hidden-fade {

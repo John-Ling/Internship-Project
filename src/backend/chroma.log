@@ -376,3 +376,7 @@
 [32mINFO[0m:     [04-12-2023 09:59:43] 127.0.0.1:42784 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
 [32mINFO[0m:     [04-12-2023 09:59:45] 127.0.0.1:42784 - "POST /api/v1/collections/ee48b884-881b-421d-9808-4adec301ec8e/query HTTP/1.1" 200
 [32mINFO[0m:     [04-12-2023 09:59:45] 127.0.0.1:42784 - "POST /api/v1/collections/ee48b884-881b-421d-9808-4adec301ec8e/query HTTP/1.1" 200
+[32mINFO[0m:     [04-12-2023 10:21:31] Shutting down
+[32mINFO[0m:     [04-12-2023 10:21:31] Waiting for application shutdown.
+[32mINFO[0m:     [04-12-2023 10:21:31] Application shutdown complete.
+[32mINFO[0m:     [04-12-2023 10:21:31] Finished server process [[36m11237[0m]
