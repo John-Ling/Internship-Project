@@ -9,11 +9,13 @@ interface SearchBarProps  {
 
 export const SearchBar:React.FC<SearchBarProps> = ({addMessage}) => {
 	const [query, setQuery] = useState("");
-	const [disabled, setDisabled] = useState(false);
 
 	const handle_submit = (e: any) => {
-		setDisabled(true);
 		e.preventDefault();
+		if (query === "") {
+			return;
+		}
+		
 		let message: message = {content: query, fromBot: false}
 		addMessage(message);
 		setQuery("");

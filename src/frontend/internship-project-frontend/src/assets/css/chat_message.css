@@ -1,5 +1,4 @@
 div {
-  padding: 0.5rem;
   background-color: #242424;
 }
 
@@ -23,7 +22,8 @@ div {
   animation: hidden-fade 0.5s;
   animation-iteration-count: 1;
   margin: 0.5rem;
-  background-color: #2e2e2e;
+  padding: 2px 8px;
+  background-color: #242424;
   white-space: pre-wrap;
 }
 
@@ -45,12 +45,17 @@ div {
   border: solid 3px #7aa2f7;
 }
 
-@media screen and (max-width: 600px) {
-  .message {
-    width: 80vw;
-  }
+@media screen and (max-width: 900px) {
   .bot div {
     max-width: unset;
+  }
+}
+@media screen and (max-width: 500px) {
+  .bot div {
+    max-width: unset;
+  }
+  .message {
+    font-size: 0.75rem;
   }
 }
 

@@ -1,7 +1,6 @@
 @use "./colours.scss" as *;
 
 div {
-	padding: 0.5rem;
 	background-color: $background;
 }
 
@@ -25,7 +24,8 @@ div {
 	animation: hidden-fade 0.5s;
 	animation-iteration-count: 1;
 	margin: 0.5rem;
-	background-color: $background-darker;
+	padding: 2px 8px;
+	background-color: $background;
 	white-space: pre-wrap;
 }
 
@@ -49,14 +49,22 @@ div {
 	border: solid 3px $blue;
 }
 
-
-@media screen and (max-width: 600px) {
-	.message {
-		width: 80vw;
-	}
+@media screen and (max-width: 900px) {
 	.bot {
 		div {
 			max-width: unset;
 		}
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.bot {
+		div {
+			max-width: unset;
+		}
+	}
+
+	.message {
+		font-size: 0.75rem;
 	}
 }

@@ -1,4 +1,4 @@
-import { useState, createContext } from 'react';
+import { useState } from 'react';
 import { SearchBar } from './components/SearchBar';
 import { ChatMessage } from './components/ChatMessage';
 import { message } from "./types";
@@ -10,15 +10,13 @@ function App() {
 
 	const add_message = (message: message) => {
 		const call_api = async (query: string): Promise<string> => {
-
-			// search vector database for similar text to use as context
 			const response = await fetch("http://127.0.0.1:8080/search", {
 				method: "POST",
 				headers: {"Content-Type": "application/json"},
 				body: JSON.stringify({"query": query})
 			}).then(response => response.json());
 			
-			console.log(response)
+			console.log(response);
 			let context: string = response["context"];
 			console.log(context);
 			

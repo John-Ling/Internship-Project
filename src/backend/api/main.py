@@ -41,16 +41,18 @@ ORIGIN = "*" # pls change this later
 def search():
 	if request.method == "OPTIONS":
 		response = Response()
-		response.headers["access-control-allow-origin"] = ORIGIN
-		response.headers["access-control-allow-headers"] = ORIGIN
-		response.headers["access-control-allow-methods"] = ORIGIN
+		response.headers = {
+			"access-control-allow-origin": ORIGIN, 
+			"access-control-allow-headers": ORIGIN,
+			"access-control-allow-methods": ORIGIN
+		}
 		return response
 
 	body = request.get_json()
 	query = body["query"]
 
 
-	TYPES = {"balance sheet": 2, "cash flow": 3, "income statement": 4}
+	TYPES = {"balance sheet": 2, "income statement": 3, "cash flow": 4}
 	queryID = 1
 	for type in TYPES:
 		if type in query:
@@ -86,9 +88,11 @@ def search():
 def query():
 	if request.method == "OPTIONS":
 		response = Response()
-		response.headers["access-control-allow-origin"] = ORIGIN
-		response.headers["access-control-allow-headers"] = ORIGIN
-		response.headers["access-control-allow-methods"] = ORIGIN
+		response.headers = {
+			"access-control-allow-origin": ORIGIN, 
+			"access-control-allow-headers": ORIGIN,
+			"access-control-allow-methods": ORIGIN
+		}
 		return response
 
 	body = request.get_json()

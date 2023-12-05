@@ -1,49 +1,40 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   font-family: "meslolgs_nfregular";
   background-color: #242424;
   color: #F0F0F0;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  gap: 0;
-  align-items: center;
-  min-height: 100vh;
+#chat-view {
+  background-color: #2e2e2e;
+  border: solid 3px #e0af68;
+  width: 85vw;
+  height: 80vh;
+  overflow-y: auto;
+  padding: 1rem;
 }
 
 #main-view {
-  background-color: #2e2e2e;
-  border: solid 3px #e0af68;
   display: flex;
   flex-direction: column;
-  padding: 0.5rem;
-  height: 95vh;
-  width: 85vw;
-}
-
-#chat-view {
-  background-color: #2e2e2e;
-  overflow-y: auto;
-}
-
-#conversation-section {
-  display: flex;
   justify-content: center;
   align-items: center;
-  height: 75vh;
-}
-
-.greeting-placeholder {
-  justify-self: center;
+  gap: 1rem;
+  min-height: 100vh;
 }
 
 @media screen and (max-width: 500px) {
   #main-view {
-    padding: 0;
-    height: 100vh;
-    width: 100vw;
+    gap: 8px;
+  }
+  #chat-view {
+    border: solid 3px #e0af68;
+    margin: 0;
+    height: 75vh;
   }
 }
 
