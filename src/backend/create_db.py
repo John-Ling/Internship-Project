@@ -1,6 +1,7 @@
 from dotenv import load_dotenv
 import mysql.connector
 import os
+import hashlib
 
 load_dotenv()
 
@@ -11,8 +12,11 @@ def main():
 		password=os.environ["DB_PASSWORD"],
 		database="internship_project"
 	) as connection:
-		
 		cursor = connection.cursor()
+
+		cursor.execute("CREATE TABLE IF NOT EXISTS documents(id varchar(60) NOT NULL PRIMARY KEY, stock_id INT NOT NULL, type_id INT NOT NULL, content VARCHAR(8000), name VARCHAR(50));");
+		connection.commit()
+		
 		for file in os.listdir("./data"):
 			path = os.path.join("./data", file);
 
@@ -33,7 +37,10 @@ def main():
 			
 			assert typeID != ""
 
-			INSERT = f"INSERT IGNORE INTO documents VALUES({stockID}, {typeID}, \"{content}\", \"{name}\");"
+			print(name.lower())
+			id = hashlib.md5(f"{name.lower()}{typeID}".encode()).hexdigest()
+			print(id)
+			INSERT = f"INSERT INTO documents VALUES(\"{id}\", {stockID}, {typeID}, \"{content}\", \"{name}\");"
 			cursor.execute(INSERT)
 
 		cursor.close()

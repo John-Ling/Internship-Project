@@ -28,7 +28,7 @@ function App() {
 				body: JSON.stringify({"query": query, "context": context})
 			}).then(response => response.json());
 
-			console.log("Response");``
+			console.log("Response");
 			console.log(llmResponse);
 			return llmResponse;
 		}

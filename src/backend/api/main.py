@@ -1,11 +1,11 @@
-from sentence_transformers import SentenceTransformer
 from flask import Flask, request, jsonify, Response
 from dotenv import load_dotenv
 import requests
-import chromadb
+import mysql.connector
 import os
 import json
 import difflib
+import hashlib
 from names import NAMES
 
 load_dotenv()
@@ -30,25 +30,7 @@ def load_data(path):
 		ids.append(f"id{index+1}")
 	return content, ids, metadata
 
-print("Setting up embedding model")
-MODEL = SentenceTransformer("all-MiniLM-L6-v2")
-
-print("Connecting to database")
-CLIENT = chromadb.HttpClient(host="localhost", port=8000)
-
-print("Getting main collection")
-MAIN_COLLECTION = CLIENT.get_or_create_collection(name="main-collection", metadata={"hnsw:space": "l2"})
-
-# data, ids, metadata = load_data("../data")
-# print(data[0])
-# print(ids[0])
-# print(metadata[0:3])
-
-# MAIN_COLLECTION.add(
-# 	documents=data,
-# 	ids=ids,
-# 	metadatas=metadata
-# )
+CONNECTION = mysql.connector.connect(host="localhost",user="admin",password=os.environ["DB_PASSWORD"],database="internship_project")
 
 print("Starting Flask")
 app = Flask(__name__)
@@ -68,11 +50,11 @@ def search():
 	query = body["query"]
 
 
-	TYPES = ["balance sheet", "cash flow", "income statement"]
-	queryType = "key stats"
+	TYPES = {"balance sheet": 2, "cash flow": 3, "income statement": 4}
+	queryID = 1
 	for type in TYPES:
 		if type in query:
-			queryType = type
+			queryID = TYPES[type]
 
 	CONTEXT = "Extract the names of companies from any prompt you receive. You should return your answer as JSON with a string array of the names you extract. The array should be under the key called \"name\""
 	response = requests.post("https://api.openai.com/v1/chat/completions",
@@ -85,21 +67,16 @@ def search():
 
 	data = response.json()
 	context = ""
-	embedding = MODEL.encode(query).tolist()
 	for name in json.loads(data["choices"][0]["message"]["content"])["name"]:
 		name = name.lower()
 		dbName = difflib.get_close_matches(str(name), NAMES, 1)[0]
-		dbResponse = MAIN_COLLECTION.query(
-			query_embeddings=embedding,
-			n_results=1,
-			where={"$and": [
-					{"name": dbName},
-					{"type": queryType}
-				]
-			},
-			include=["documents"]
-		)
-		context += f"{dbResponse['documents'][0][0]}\n"
+		hash = hashlib.md5(f"{dbName}{queryID}".encode()).hexdigest()
+		
+		cursor = CONNECTION.cursor()
+		cursor.execute(f"SELECT content FROM documents WHERE id = \"{hash}\" AND type_id = {queryID} LIMIT 1;")
+		result = cursor.fetchall()
+
+		context += result[0][0]
 
 	response = jsonify({"context": context})
 	response.headers.add("access-control-allow-origin", ORIGIN)
