@@ -5,6 +5,7 @@
 }
 #search-bar input {
   color: #F0F0F0;
+  margin: 4px;
 }
 #search-bar input[type=text] {
   font-family: "meslolgs_nfregular";
@@ -34,9 +35,6 @@
   #search-bar {
     flex-direction: column;
     align-items: center;
-  }
-  #search-bar input {
-    margin: 4px;
   }
   #search-bar input[type=text] {
     width: 70vw;

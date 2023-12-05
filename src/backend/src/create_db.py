@@ -37,9 +37,7 @@ def main():
 			
 			assert typeID != ""
 
-			print(name.lower())
 			id = hashlib.md5(f"{name.lower()}{typeID}".encode()).hexdigest()
-			print(id)
 			INSERT = f"INSERT INTO documents VALUES(\"{id}\", {stockID}, {typeID}, \"{content}\", \"{name}\");"
 			cursor.execute(INSERT)
 

@@ -145,13 +145,20 @@ def query_llm(query, context):
 
 	Type 5: The user has asked a question that does not contain a company name or is related to finance. For those questions you must respond with the phrase "This question no apply".
 	An example type 3 question would be "What is the weather like" or "How much water should I be drinking" or "Voice your opinion on Israel vs Palestine".
+
+	For questions 1 and 4, the user may specify that they want answers for a long term or short term investment. These questions may sound something like 
+	"Is x a good long term investment" or "Give me reasons x is a good short term investment" or "Is x a bad long term investment?".
+	For questions that explicitly contain the term "long term" or "short term" (the phrase may include a dash instead of a space), you should take it into consideration.
+	For long term investments look for patterns of stability while for short term look for patterns of immediate reward. If the user does not specify whether they want a long-term
+	or short-term investment then assume they want a long term investment. 
 	"""
 
 	prompt = f"Answer the following question: {query}."
 
 	response = requests.post("https://api.openai.com/v1/chat/completions",
 						  headers={"Authorization": f"Bearer {os.environ['OPENAI_API_KEY']}", "Content-Type": "application/json"},
-						  json={"model": "gpt-3.5-turbo", "temperature": 0.7,
+
+						  json={"model": "gpt-3.5-turbo", "temperature": 0.5,
 			  					"messages": [
 									  {"role": "system", "content": BOT_CONTEXT},
 									  {"role": "user", "content": prompt}

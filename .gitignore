@@ -3,8 +3,9 @@ src/backend/bin
 src/backend/lib
 src/backend/lib64
 src/backend/pyvenv.cfg
-src/backend/__pycache__
+src/backend/src/api/__pycache__
+src/backend/src/api/.env
+src/backend/src/.env
 src/backend/share
-src/backend/excel-data
-src/backend/data
-src/chroma.log
+src/backend/excel-data/*
+src/backend/data/*
