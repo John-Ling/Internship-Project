@@ -20,9 +20,9 @@ def main():
 		print("Done")
 	
 	# convert and chunk excel documents
-	for file in os.listdir("../excel-data"):
+	for file in os.listdir("../../excel-data"):
 		print("Chunking File...", end=" ")
-		excel_to_text(os.path.join("../excel-data", file));
+		excel_to_text(os.path.join("../../excel-data", file));
 		print("Done")
 		
 	return
@@ -73,7 +73,7 @@ def company_info(stockCode):
 			continue
 
 		filename = response.headers["Content-Disposition"][21:-1]
-		open(f"../excel-data/{filename}", "wb").write(response.content)
+		open(f"../../excel-data/{filename}", "wb").write(response.content)
 	
 	return
 
