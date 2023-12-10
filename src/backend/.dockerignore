@@ -1,0 +1,11 @@
+bin/
+include/
+lib/
+lib64/
+share/
+db.sql
+excel-data/
+data/
+src/api/__pycache__
+src/scraper/__pycache__
+pyvenv.cfg

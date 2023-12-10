@@ -1,0 +1,7 @@
+node_modules
+build
+npm-debug.log
+README.md
+.gitignore
+dist/
+.eslintrc.cjs

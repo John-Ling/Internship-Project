@@ -37,12 +37,16 @@ app = Flask(__name__)
 
 ORIGIN = "*" # pls change this later
 
+@app.route("/ping", methods=["GET"])
+def ping():
+	return "Pong"
+
 @app.route("/search", methods=["POST", "OPTIONS"])
 def search():
 	if request.method == "OPTIONS":
 		response = Response()
 		response.headers = {
-			"access-control-allow-origin": ORIGIN, 
+			"access-control-allow-origin": ORIGIN,
 			"access-control-allow-headers": ORIGIN,
 			"access-control-allow-methods": ORIGIN
 		}
@@ -53,7 +57,7 @@ def search():
 
 
 	TYPES = {"balance sheet": 2, "income statement": 3, "cash flow": 4}
-	queryID = 1
+	queryID = 1 # by default we look for 
 	for type in TYPES:
 		if type in query:
 			queryID = TYPES[type]
@@ -61,14 +65,16 @@ def search():
 	CONTEXT = "Extract the names of companies from any prompt you receive. You should return your answer as JSON with a string array of the names you extract. The array should be under the key called \"name\""
 	response = requests.post("https://api.openai.com/v1/chat/completions",
 						  headers={"Authorization": f"Bearer {os.environ['OPENAI_API_KEY']}", "Content-Type": "application/json"},
-						  json={"model": "gpt-3.5-turbo", "temperature": 0.7,
+						  json={"model": "gpt-3.5-turbo", "temperature": 0.1,
 			  					"messages": [
 									  {"role": "system", "content": CONTEXT},
 									  {"role": "user", "content": query}
 								]})
 
 	data = response.json()
+	print(data)
 	context = ""
+
 	for name in json.loads(data["choices"][0]["message"]["content"])["name"]:
 		name = name.lower()
 		dbName = difflib.get_close_matches(str(name), NAMES, 1)[0]
@@ -120,7 +126,7 @@ def query_llm(query, context):
 	You want to be very specific and include specific numbers you used to make your decision in your answer.
 	Keep your answers concise and below 300 words. Speak with conviction and certainty.
 
-	You will be provided with a context. Depending on the type of question you will be asked, you may ues it to create your answer.
+	You will be provided with a context. Depending on the type of question you will be asked, you may use it to create your answer.
 	Context: {context}
 
 	The user will most likely ask 4 types of questions:
@@ -158,7 +164,7 @@ def query_llm(query, context):
 	response = requests.post("https://api.openai.com/v1/chat/completions",
 						  headers={"Authorization": f"Bearer {os.environ['OPENAI_API_KEY']}", "Content-Type": "application/json"},
 
-						  json={"model": "gpt-3.5-turbo", "temperature": 0.5,
+						  json={"model": "gpt-3.5-turbo", "temperature": 0.25,
 			  					"messages": [
 									  {"role": "system", "content": BOT_CONTEXT},
 									  {"role": "user", "content": prompt}
