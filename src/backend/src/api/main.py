@@ -30,7 +30,7 @@ def load_data(path):
 		ids.append(f"id{index+1}")
 	return content, ids, metadata
 
-CONNECTION = mysql.connector.connect(host="localhost",user="admin",password=os.environ["DB_PASSWORD"],database="internship_project")
+CONNECTION = mysql.connector.connect(host=os.environ["DB_ADDRESS"],user=os.environ["DB_USER"],password=os.environ["DB_PASSWORD"],database=os.environ["DB_NAME"])
 
 print("Starting Flask")
 app = Flask(__name__)

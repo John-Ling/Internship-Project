@@ -7,10 +7,10 @@ load_dotenv()
 
 def main():
 	with  mysql.connector.connect(
-		host="localhost",
-		user="admin",
+		host=os.environ["DB_ADDRESS"],
+		user=os.environ["DB_USER"],
 		password=os.environ["DB_PASSWORD"],
-		database="internship_project"
+		database=os.environ["DB_NAME"]
 	) as connection:
 		cursor = connection.cursor()
 
